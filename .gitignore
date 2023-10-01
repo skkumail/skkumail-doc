@@ -1,2 +1,5 @@
-.aux
-.log
+# Latex
+main.aux
+main.log
+main.out
+main.pdf
