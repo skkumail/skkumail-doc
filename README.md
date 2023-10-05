@@ -1,13 +1,28 @@
-# MailGPT-DOC: A GPT-Integrated Email Service for Dynamic Content Generation
+# MailGPT-DOC: Dynamic Content Generation for Emails with GPT
 
-MailGPT aims to revolutionize email drafting by integrating the power of GPT for content creation. It's built with Next.js, Docker, and MongoDB, offering users a seamless, dynamic, and tailored email experience.
+Harness the unparalleled capabilities of GPT for email drafting. MailGPT, designed with React, Docker, and AWS guarantees users an intuitive, adaptive, and unmatched emailing experience.
 
-## Building the Documentation
+## 📜 Building and Viewing the Documentation
 
-To build the LaTeX documentation:
+If you're looking to build the provided LaTeX documentation, follow these steps:
 
-1. Navigate to the directory containing the LaTeX files.
-2. Use the `Makefile` commands:
-   - `make`: To build the LaTeX document into a PDF.
-   - `make clean`: To clean the directory of auxiliary files but retain the PDF.
-   - `make deepclean`: To clean the directory including the generated PDF.
+### 1️⃣ Navigate:
+Head to the directory containing the LaTeX files.
+
+### 2️⃣ Make Commands:
+
+- **Build PDF**: `make`
+   - This will compile your LaTeX document into a PDF format.
+  
+- **View PDF**: `make open`
+   - This command will automatically open the generated PDF for you to view.
+
+- **Cleanup**: `make clean`
+   - Clear out auxiliary files but keep the PDF.
+  
+- **Deep Cleanup**: `make deepclean`
+   - This will wipe the directory, including the generated PDF.
+
+---
+
+**Note**: The `Makefile` is configured with the assumption that you have `evince` PDF viewer installed. If you are using a different PDF viewer, ensure you modify the `Makefile` accordingly.

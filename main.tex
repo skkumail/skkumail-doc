@@ -63,7 +63,7 @@ Our system is divided into three core components, each dedicated to performing i
 \begin{itemize}
 	\item \textbf{Frontend}: Developed using React, a popular React framework known for its server-side rendering capabilities. It ensures a seamless user experience, catering to a responsive design that is adaptable across devices of varying sizes.
 	      	          
-	\item \textbf{Backend}: Developed using Fast API, a high-performance framework for building web applications. This component is responsible for the system's core logic, including its interaction with SQLite and the GPT API. It plays a pivotal role in data processing and content generation.
+	\item \textbf{Backend}: Developed using Django, a plug to play framework for building web applications. This component is responsible for the system's core logic, including its interaction with SQLite and the GPT API. It plays a pivotal role in data processing and content generation.
 	      	          
 	\item \textbf{Database}: We've opted for SQLite as our primary data store. 
 \end{itemize}
@@ -71,7 +71,7 @@ Our system is divided into three core components, each dedicated to performing i
 \subsection{Workflow}
 The workflow is straightforward and user-centric. Upon accessing the platform, users are prompted to provide the target email and their desired mood or tone for the email content. This leads to a sequence of operations:
 
-The frontend, harnessing the capabilities of React, utilizes a predefined template to generate a unique prompt based on the user's input. This prompt is securely stored in SQLite for future reference. Following this, the backend, powered by Fast API, dispatches the prompt to the GPT API. The GPT API, using its advanced natural language processing capabilities, crafts an appropriate email content tailored to the user's requirements. This content is returned in Markdown format, allowing users to view a well-structured preview.
+The frontend, harnessing the capabilities of React, utilizes a predefined template to generate a unique prompt based on the user's input. This prompt is securely stored in SQLite for future reference. Following this, the backend, powered by Django, dispatches the prompt to the GPT API. The GPT API, using its advanced natural language processing capabilities, crafts an appropriate email content tailored to the user's requirements. This content is returned in Markdown format, allowing users to view a well-structured preview.
 
 If the user is satisfied with the generated content, a confirmation is obtained. Subsequently, the content is sent to the designated target email address using SMTP, ensuring timely and reliable delivery.
 
@@ -104,9 +104,9 @@ Furthermore, while the user interface presents a polished and seamless experienc
 
 As depicted in Figure \ref{fig:gpt_api_flow}, the GPT API data flow underpins MailGPT's operation, demonstrating a meticulously orchestrated interaction among various components.
 
-Upon a user's request, the system channels the call from the client terminal to our EC2 instance, initially interfacing with the Nginx for efficient load balancing. The request subsequently traverses the React framework for preliminary processing and then to FastAPI, an ASGI framework ensuring rapid processing and data integrity. At the crux of this sequence, the GPT API server, fortified with advanced algorithms, processes and contextualizes the request, transforming it into coherent outputs.
+Upon a user's request, the system channels the call from the client terminal to our EC2 instance, initially interfacing with the Nginx for efficient load balancing. The request subsequently traverses the React framework for preliminary processing and then to Django, an ASGI framework ensuring rapid processing and data integrity. At the crux of this sequence, the GPT API server, fortified with advanced algorithms, processes and contextualizes the request, transforming it into coherent outputs.
 
-The processed data, rich with insights, retraces its steps, passing through FastAPI and React for final optimization before Nginx ensures its prompt return to the user. This streamlined flow epitomizes efficiency and reliability in MailGPT's infrastructure.
+The processed data, rich with insights, retraces its steps, passing through Django and React for final optimization before Nginx ensures its prompt return to the user. This streamlined flow epitomizes efficiency and reliability in MailGPT's infrastructure.
 
 
 \begin{figure}[ht]
@@ -227,7 +227,7 @@ In the journey of creating the MailGPT application, a team of adept professional
 		\hline
 		Sumin Lim   & Frontend (React, UX/UI)                                           \\
 		\hline
-		Dohyun Bu & Backend (Fast API, GPT, DB), AI algorithm                           \\
+		Dohyun Bu & Backend (Django, GPT, DB), AI algorithm                           \\
 		\hline
 		Miseo Joung & Frontend (React, UX/UI)                                           \\
 		\hline
