@@ -1,6 +1,6 @@
-# SKKUMAIL-DOC: A GPT-Integrated Email Service for Dynamic Content Generation
+# MailGPT-DOC: A GPT-Integrated Email Service for Dynamic Content Generation
 
-SKKUMAIL aims to revolutionize email drafting by integrating the power of GPT for content creation. It's built with Next.js, Docker, and MongoDB, offering users a seamless, dynamic, and tailored email experience.
+MailGPT aims to revolutionize email drafting by integrating the power of GPT for content creation. It's built with Next.js, Docker, and MongoDB, offering users a seamless, dynamic, and tailored email experience.
 
 ## Building the Documentation
 
